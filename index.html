@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Gray - Software Developer </title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .header { 
+            background-color: #4CAF50; /* Bright green */
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        .intro { 
+            padding: 20px; 
+            text-align: center; /* Ensure text is centered */
+        }
+        .intro img.profile-pic {
+            display: block;
+            margin: 0 auto 20px; /* Adds 20px margin below the profile picture */
+            width: 300px; 
+            height: auto;
+        }
+        .links { 
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 20px; 
+        }
+        .links a { 
+            margin: 0 10px; 
+            text-decoration: none; /* Removes underline from links */
+            color: #4CAF50; /* Link color to match the header */
+        }
+        .projects-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            text-align: center; /* Ensure text in this container is centered */
+        }
+        .project {
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            flex: 0 1 calc(50% - 20px); /* Adjust for two columns */
+            background-color: #f2f2f2; /* Alternating background removed for simplicity */
+        }
+        .project h2, .project p { /* Center-align project titles and descriptions */
+            text-align: center;
+        }
+        img.project-img {
+            display: block;
+            margin: 10px auto;
+            width: auto;
+            height: 100px;
+        }
+    
+        @media (max-width: 500px) {
+            .project {
+                flex: 0 1 100%; /* Single column on small screens */
+            }
+            .links { 
+                flex-direction: column; /* Stack links vertically on small screens */
+            }
+        }
+    </style>
+    
+
+    
+    
+    
+</head>
+<body>
+
+    <div class="header">
+        <h1>Daniel Gray</h1>
+        <p>Software Developer and Cybersecurity Engineer</p>
+    </div>
+    
+    <div class="intro">
+        <div class="left-column">
+            <img src="DanGrayProfileRoof.jpeg" alt="Daniel Gray" class="profile-pic">
+        </div>
+        <div class="right-column">
+            <p class="bio-description">Hi, I'm Daniel Gray, a versatile software developer with a Physics degree from Columbia University (2011) and a Master's degree in Computer Science from NYU (2022). Not just a web developer, I am a jack of all trades with keen interests in building innovative websites, diving into artificial intelligence, and strengthening cybersecurity. Recognized in the top 3 percent on TryHackMe, I am not only adept at developing my own projects but also an idea man passionate about creating unique user experiences. My project, GothamSonic, exemplifies my commitment to aesthetics and user-centric design.</p>
+    </div>
+    
+    <div class="links">
+        <a href="https://github.com/calcmaster7" target="_blank">Github</a>
+        <a href="certificates.html">Degrees and Certificates</a>
+    </div>
+    
+    <div class="projects-container">
+        <div class="project">
+            <h2>GothamSonic.com</h2>
+            <img src="GothamSonicPic3.png" alt="GothamSonic Logo" class="project-img" style="width: 300px; height: auto;">
+            <p>A New York City community music site with the best concert calendar in NYC. Users can create accounts, upload, and listen to songs. Designed with its own API, it utilizes React for the front end and Django for the backend, offering a seamless SPA (Single Page Application) experience.</p>
+        </div>
+        <!-- Other projects follow the same structure -->
+        <div class="project">
+            <h2>HackBay.net</h2>
+            <img src="HackBayPicture.PNG" alt="GothamSonic Logo" class="project-img" style="width: 300px; height: auto;">
+            <p>Inspired by the CS50W project "Commerce", HackBay.net is an online marketplace that empowers users to list items for sale, bid on products, and build an e-commerce community.</p>
+        </div>
+
+        <div class="project">
+            <h2>ChitChattle.com</h2>
+            <p>My take on the Harvard CS50 Web project "Network", ChitChattle.com is a social media platform allowing users to share updates, connect with others, and form a community of like-minded individuals.</p>
+        </div>
+        
+     
+        <div class="project">
+            <h2>Question Answerer == IBM watson-like question and answering system</h2>
+            <img src="CS50AIpicture.png" alt="GothamSonic Logo" class="project-img">
+            <p>A venture into artificial intelligence, Questions is a Watson-like question and answering system that showcases my expanding interest and capabilities in AI, derived from the CS50AI class project.</p>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>
