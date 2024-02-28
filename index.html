@@ -60,15 +60,23 @@
             width: auto;
             height: 100px;
         }
-    
+        h3 {
+    font-size: 20px; /* Or whatever your default size is for larger screens */
+    /* Other h3 styles here */
+}
         @media (max-width: 500px) {
             .project {
                 flex: 0 1 100%; /* Single column on small screens */
+            }
+            h3 {
+        font-size: 15px; /* Adjust this value as needed to fit on one line on mobile */
             }
             .links { 
                 flex-direction: column; /* Stack links vertically on small screens */
             }
         }
+
+
     </style>
     
 
