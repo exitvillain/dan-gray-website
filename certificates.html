@@ -8,55 +8,69 @@
 </head>
 <style>
    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #eef2f3; /* Light background for contrast */
-        color: #333; /* Darker text for readability */
-        text-align: center; /* Center text by default */
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3; /* Light background for contrast */
+    color: #333; /* Darker text for readability */
+    text-align: center; /* Center text by default */
+}
+h1, h2 {
+    color: #205072; /* Deep blue for headers */
+}
+.header {
+    background-color: #329D9C; /* Teal background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.certificate {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%;
+    background-color: #FFF; /* White background for certificate sections */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+.certificate img {
+    width: 600px;
+    height: auto;
+    display: block; /* Ensure images are block level for margin auto to work */
+    margin: 0 auto; /* Center images */
+}
+p, a {
+    font-size: 1rem;
+    color: #2C6975; /* Soft green for text */
+    margin: 10px 0; /* Spacing around paragraphs and links */
+}
+a {
+    text-decoration: none;
+    color: #2A9D8F; /* Make links stand out */
+}
+a:hover {
+    text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+@media (max-width: 768px) {
+    .certificate img {
+        width: 100%; /* Full width images on smaller screens */
     }
-    h1, h2 {
-        color: #205072; /* Deep blue for headers */
-    }
-    .header {
-        background-color: #329D9C; /* Teal background */
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+}
+
+@media (max-width: 500px) {
     .certificate {
-        margin: 20px auto;
-        padding: 20px;
-        max-width: 80%;
-        background-color: #FFF; /* White background for certificate sections */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
-        border-radius: 10px; /* Rounded corners */
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin: 10px auto; /* Adjust margin for tighter layout */
+        max-width: 90%; /* Allow a bit more width within the viewport */
     }
     .certificate img {
-        width: 600px;
-        height: auto;
-        display: block; /* Ensure images are block level for margin auto to work */
-        margin: 0 auto; /* Center images */
+        max-width: 100%; /* Ensure images are not wider than their container */
+        height: auto; /* Maintain aspect ratio */
     }
-    p, a {
-        font-size: 1rem;
-        color: #2C6975; /* Soft green for text */
-        margin: 10px 0; /* Spacing around paragraphs and links */
-    }
-    a {
-        text-decoration: none;
-        color: #2A9D8F; /* Make links stand out */
-    }
-    a:hover {
-        text-decoration: underline; /* Add underline on hover for better UX */
-    }
+}
 
-    @media (max-width: 768px) {
-        .certificate img {
-            width: 100%; /* Full width images on smaller screens */
-        }
-    }
+
 
 
 </style>
