@@ -4,155 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="OsirisLogo.png" type="image/x-icon">
-
     <title>Daniel Gray</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-        }
-        .header { 
-            background-color: #4CAF50; /* Bright green */
-            color: white; 
-            padding: 20px; 
-            text-align: center; 
-        }
-        .intro { 
-            padding: 20px; 
-            text-align: center; /* Ensure text is centered */
-        }
-        .intro img.profile-pic {
-            display: block;
-            margin: 0 auto 20px; /* Adds 20px margin below the profile picture */
-            width: 300px; 
-            height: auto;
-        }
-        .links { 
-            display: flex; 
-            justify-content: center; 
-            margin-bottom: 20px; 
-        }
-        .links a { 
-            margin: 0 10px; 
-            text-decoration: none; /* Removes underline from links */
-            color: #4CAF50; /* Link color to match the header */
-        }
-        .projects-container { 
-            display: flex; 
-            flex-wrap: wrap; 
-            justify-content: space-around; 
-            text-align: center; /* Ensure text in this container is centered */
-        }
-        .project {
-            margin: 10px;
-            padding: 20px;
-            box-sizing: border-box;
-            flex: 0 1 calc(50% - 20px); /* Adjust for two columns */
-            background-color: #f2f2f2; /* Alternating background removed for simplicity */
-        }
-        .project h2, .project p { /* Center-align project titles and descriptions */
+        body {
+            background-color: #0000AA; /* Bright blue background */
+            color: #FFFFFF; /* White text */
+            font-family: "Courier New", Courier, monospace; /* Terminal-like font */
+            margin: 0;
+            padding: 0;
             text-align: center;
         }
-        img.project-img {
-            display: block;
-            margin: 10px auto;
-            width: auto;
-            height: 100px;
+
+        .header {
+            background-color: #222;
+            padding: 20px;
+            color: #FFFFFF;
+            border-bottom: 2px solid #FFFFFF;
         }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
         h3 {
-    font-size: 20px; /* Or whatever your default size is for larger screens */
-    /* Other h3 styles here */
-}
-        @media (max-width: 500px) {
-            .project {
-                flex: 0 1 100%; /* Single column on small screens */
-            }
-            h3 {
-        font-size: 16px; /* Adjust this value as needed to fit on one line on mobile */
-            }
-            
+            font-size: 1.2em;
+            margin-top: 10px;
         }
 
-        .github-link {
-    display: inline-block;
-    margin-top: 10px; /* Adjust spacing as needed */
-    padding: 5px 15px; /* Adjust button size as needed */
-    background-color: #333; /* GitHub color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 5px; /* Optional: rounds corners */
-    font-size: 16px; /* Adjust text size as needed */
-}
+        .links a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            border-bottom: 1px dashed #FFFFFF;
+        }
 
-       
+        .links a:hover {
+            color: #39FF14;
+            border-bottom: 1px solid #39FF14;
+        }
 
+        /* Projects Section */
+        .projects-container {
+            padding: 30px;
+        }
 
+        .project {
+            margin: 30px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: #0000AA;
+            border: 1px solid #FFFFFF;
+            text-align: left;
+            color: #FFFFFF;
+        }
+
+        .project h2 {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
+        a.github-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 15px;
+            background-color: #333;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a.github-link:hover {
+            background-color: #39FF14;
+        }
+
+        .terminal-prompt {
+            font-size: 1.5em;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
     </style>
-    
-
-    
-    
-    
 </head>
 <body>
-  
     <div class="header">
         <h1>Daniel Gray</h1>
         <h3>Software Developer and Cybersecurity Engineer</h3>
-    </div>
-
-    
-    <div class="intro">
         <div class="links">
             <a href="https://github.com/calcmaster7" target="_blank">Github</a>
             <a href="certificates.html">Degrees and Certificates</a>
         </div>
-        <div class="left-column">
-            <img src="DanGrayJetsPic3.jpg" alt="Daniel Gray" class="profile-pic">
-        </div>
-        <div class="right-column">
-            <p class="bio-description">Hi!! I'm Daniel Gray, a versatile software developer with a Physics degree from Columbia University (2011) and a Master's degree in Computer Science from NYU (2022). Not just a web developer, I am a jack of all trades with keen interests in building innovative websites, diving into artificial intelligence, and strengthening cybersecurity.I am not only adept at developing my own projects but also an idea man passionate about creating unique user experiences. My project, GothamSonic, exemplifies my commitment to aesthetics and user-centric design.</p>
     </div>
-    
-    
+
+    <div class="terminal-prompt">>exitvillain</div>
+
     <div class="projects-container">
         <div class="project">
-            <h2>GothamSonic.com</h2>
-            <img src="GothamSonicPic3.png" alt="GothamSonic Logo" class="project-img" style="width: 300px; height: auto;">
-            <p>
-                GothamSonic is a New York City-based community music site that revolutionizes how locals and visitors alike explore the city's vibrant music scene. With a comprehensive concert calendar showcasing a diverse array of venues, the platform invites users to not only discover new music but also share their own by uploading and streaming songs. At its core, GothamSonic is engineered as a Single Page Application (SPA) to ensure a fluid, user-friendly experience. Leveraging React for dynamic frontend interactions and Django REST Framework for robust API development, it offers seamless navigation and real-time updates. The backend is powered by a PostgreSQL database </p>
-            <a href="https://github.com/calcmaster7" target="_blank" class="github-link">View on GitHub</a>
-        </div>
-        <!-- Other projects follow the same structure -->
-        <div class="project">
-            <h2>HackBay.net</h2>
-            <img src="HackBayPicture.PNG" alt="GothamSonic Logo" class="project-img" style="width: 300px; height: auto;">
-            <p>Meant soley for educational purposes, an eay-like e-commerce auction site that will allow users to post auction listings about hacker gadgets, place bids on listings, comment on those listings, and add listings to a "Watchlist"</p>
-            <a href="https://github.com/calcmaster7/Hack_Bay" target="_blank" class="github-link">View on GitHub</a>
+            <h2>exitvillain.com</h2>
+            <p>My personal cybersecurity blog that I turned into a forum for hackers. Users can post in categories, like/unlike posts, follow, customize profiles, reset passwords, send pm’s. Built with Django, JavaScript, Docker, and PostgreSQL on Amazon Cloud. Features CSRF protection, security middleware, and includes an intro video on reverse engineering.</p>
+            <a href="https://exitvillain.com" target="_blank">Visit exitvillain.com</a>
         </div>
 
         <div class="project">
-            <h2>ChitChattle.com</h2>
-            <img src="background.png" alt="Chit Chattle" class="project-img" style="width: 300px; height: auto;">
-            <p>ChitChattle, a dynamic social media platform, showcases my ability to blend Django's robust backend capabilities with the interactive potential of HTML, CSS, and JavaScript on the frontend. Opting for custom-built APIs, I engineered a tailored solution that emphasizes my proficiency in developing efficient, scalable systems without relying on frameworks like Django REST.</p>
-            <a href="https://github.com/calcmaster7/chitchattle" target="_blank" class="github-link">View on GitHub</a>
+            <h2>GothamSonic.com</h2>
+            <p>NYC’s largest mobile-responsive concert calendar, listing shows 3 weeks in advance. Built with React, Django REST Framework, and PostgreSQL. Deployed on Amazon Cloud using Docker, Nginx, and Gunicorn. Includes security features like environment variables and Docker secrets, with system monitoring via Prometheus.</p>
+            <a href="https://gothamsonic.com" target="_blank">Visit GothamSonic.com</a>
         </div>
-        
-     
+
         <div class="project">
-            <h2>Question Answerer == IBM watson-like question and answering system</h2>
-            <img src="CS50AIpicture.png" alt="GothamSonic Logo" class="project-img">
-            <p>In the CS50AI course's 'Questions' project, I developed an AI that answers questions by analyzing a set of documents to find relevant answers. This project leveraged a language model to process and understand natural language, enabling it to parse text, identify key information, and generate accurate responses. Through implementing techniques like tokenization, part-of-speech tagging, and named entity recognition, the AI demonstrates the practical application of NLP (Natural Language Processing) principles to create a sophisticated question-answering system.</p>
+            <h2>IBM Watson-like Question Answerer</h2>
+            <p>Developed an AI that answers questions by analyzing a set of documents to find relevant answers. This project demonstrates the practical application of NLP (Natural Language Processing) principles to create a sophisticated question-answering system.</p>
             <a href="https://github.com/calcmaster7/morpheus" target="_blank" class="github-link">View on GitHub</a>
         </div>
     </div>
 
-    <a href="https://dannygray.dev">Back to Top</a>
-
-    
-
-
-
+    <a href="#">Back to Top</a>
 </body>
 </html>
+
