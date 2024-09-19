@@ -53,13 +53,13 @@
         .profile-pic {
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 50px; /* Shifted the image left */
             width: 150px;
             height: 150px;
-            object-fit: cover; /* Ensures image is cropped */
-            object-position: 50% 20%; /* This crops the top third of the image */
+            object-fit: cover;
+            object-position: 50% 20%; /* Crop the top part */
             border-radius: 50%;
-            border: 3px solid #FFFFFF; /* White border around the image */
+            border: 3px solid #FFFFFF; /* White border */
         }
 
         /* Projects Section */
@@ -106,6 +106,16 @@
             color: #FFFFFF;
             margin-bottom: 20px;
         }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .profile-pic {
+                position: static;
+                margin: 20px auto;
+                display: block; /* Move image under name */
+            }
+        }
+
     </style>
 </head>
 <body>
