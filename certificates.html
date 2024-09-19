@@ -4,132 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Gray's Degrees and Certificates</title>
-    
+    <style>
+        /* Override background and text colors */
+        body {
+            background-color: #0000AA !important; /* Bright blue background */
+            color: #FFFFFF !important; /* White text */
+            font-family: "Courier New", Courier, monospace; /* Terminal-like font */
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h1, h2 {
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p, a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #39FF14;
+            border-bottom: 1px solid #39FF14;
+        }
+
+        /* Certificate container styling */
+        .certificate {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 80%;
+            background-color: #000000;
+            border: 1px solid #FFFFFF;
+        }
+
+        .certificate img {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .terminal-prompt {
+            font-size: 1.5em;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        /* Style certificate images */
+        .certificate img {
+            border: 2px solid #FFFFFF;
+        }
+    </style>
 </head>
-<style>
-   
-   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #eef2f3; /* Light background for contrast */
-    color: #333; /* Darker text for readability */
-    text-align: center; /* Center text by default */
-}
-h1, h2 {
-    color: #205072; /* Deep blue for headers */
-}
-.header {
-    background-color: #329D9C; /* Teal background */
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-.certificate {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 80%;
-    background-color: #FFF; /* White background for certificate sections */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    border-radius: 10px; /* Rounded corners */
-}
-.certificate img {
-    width: 600px;
-    height: auto;
-    display: block; /* Ensure images are block level for margin auto to work */
-    margin: 0 auto; /* Center images */
-}
-p, a {
-    font-size: 1rem;
-    color: #2C6975; /* Soft green for text */
-    margin: 10px 0; /* Spacing around paragraphs and links */
-}
-a {
-    text-decoration: none;
-    color: #2A9D8F; /* Make links stand out */
-}
-a:hover {
-    text-decoration: underline; /* Add underline on hover for better UX */
-}
-
-@media (max-width: 768px) {
-    .certificate img {
-        width: 100%; /* Full width images on smaller screens */
-    }
-}
-
-@media (max-width: 500px) {
-    .certificate {
-        padding: 10px; /* Reduced padding for smaller screens */
-        margin: 10px auto; /* Adjust margin for tighter layout */
-        max-width: 90%; /* Allow a bit more width within the viewport */
-    }
-    .certificate img {
-        max-width: 100%; /* Ensure images are not wider than their container */
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-
-
-
-</style>
 <body>
-   
+
     <h1>Degrees and Certificates</h1>
     <p><a href="index.html">Back to my Homepage</a></p>
     <p><a href="https://github.com/calcmaster7" target="_blank">Github</a></p>
 
-
     <div class="certificate">
         <h2>M.S. Computer Science - New York University, 2022</h2>
         <p>My Master's degree in Computer Science, awarded by New York University in 2022, signifying my advanced understanding and skills in the field.</p>
-        <img src="NYU_diploma.jpg" alt="NYU Computer Science Degree" class="project-img" style="width: 600px; height: auto;">
+        <img src="NYU_diploma.jpg" alt="NYU Computer Science Degree">
     </div>
     
     <div class="certificate">
         <h2>B.A. Physics - Columbia University, 2011</h2>
         <p>This diploma represents my undergraduate degree in Physics, earned from Columbia University in 2011.</p>
-        <img src="ColumbiaDiploma.jpg" alt="Columbia University Physics Diploma" class="project-img" style="width: 600px; height: auto;">
+        <img src="ColumbiaDiploma.jpg" alt="Columbia University Physics Diploma">
+    </div>
+
+    <!-- New PNPT Certificate -->
+    <div class="certificate">
+        <h2>Practical Network Penetration Tester (PNPT) by TCM Security</h2>
+        <p>A mid-level pen testing certification featuring Active Directory, lateral movement, pivoting in Windows Networks.</p>
+        <img src="pnptcert.png" alt="PNPT Certificate">
     </div>
 
     <h2>Official Certs</h2>
-    <p> But why stop there?  I took a few free Harvard classes in Artificial Intelligence,Web Development and Cybersecurity because they were all brilliantly taught and the assignments were fantastic.</p>
-    <p> I also have some certificates from TryHackMe, one of the world's most popular Cyber Security Platforms </p>
+    <p>But why stop there? I took a few free Harvard classes in Artificial Intelligence, Web Development, and Cybersecurity because they were all brilliantly taught and the assignments were fantastic.</p>
+    <p>I also have some certificates from TryHackMe, one of the world's most popular Cyber Security Platforms.</p>
+
     <div class="certificate">
         <h2>CS50x - Harvard University’s introduction to the intellectual enterprises of computer science and the art of programming</h2>
-        <p>This is the exact same intro to cs class that harvard students take. In fact, you can see the real Harvard kids in the video when you are watching the class. </p>
-        <img src="cs50xcert.png" alt="CS50x Certificate"  class="project-img" style="width: 600px; height: auto;">
+        <p>This is the exact same intro to CS class that Harvard students take.</p>
+        <img src="cs50xcert.png" alt="CS50x Certificate">
     </div>
 
     <div class="certificate">
         <h2>CS50AI (HarvardX) - Introduction to Artificial Intelligence with Python</h2>
         <p>CS50’s Introduction to Artificial Intelligence with Python, exploring the concepts of AI and its implementation using Python.</p>
-        <img src="CS50AIcert2.png" alt="CS50AI Certificate" class="project-img" style="width: 600px; height: auto;">
-        
+        <img src="CS50AIcert2.png" alt="CS50AI Certificate">
     </div>
 
     <div class="certificate">
-        <p>NYU paid for me to get a verified certificate for this class as well, so here is my verified certificate from the same A.I class:</p>
-        <img src="cs50AIverified.png" alt="CS50AI Certificate"  class="project-img" style="width: 600px; height: auto;">
+        <p>NYU paid for me to get a verified certificate for this class as well, so here is my verified certificate from the same AI class:</p>
+        <img src="cs50AIverified.png" alt="CS50AI Verified Certificate">
     </div>
 
     <div class="certificate">
-        <h2>cs50P ((HarvardX) Introduction to Python</h2>
+        <h2>CS50P (HarvardX) - Introduction to Python</h2>
         <p>A course that dives into the fundamentals of Python programming, providing a solid foundation in the language.</p>
-        <img src="CS50Pcert.png" alt="cs50P Certificate" class="project-img" style="width: 600px; height: auto;">
-       
+        <img src="CS50Pcert.png" alt="CS50P Certificate">
     </div>
 
     <div class="certificate">
         <h2>TryHackMe Jr. Pen Tester</h2>
         <p>Completion certificate for the Jr. Pen Tester learning pathway on TryHackMe, showcasing skills in penetration testing.</p>
-        <img src="THMpen.png" alt="TryHackMe Jr. Pen Tester Certificate" class="project-img" style="width: 600px; height: auto;">
-       
+        <img src="THMpen.png" alt="TryHackMe Jr. Pen Tester Certificate">
     </div>
 
-    <!-- Link back to the main page -->
     <p><a href="index.html">Back to my Homepage</a></p>
+
 </body>
 </html>
 
