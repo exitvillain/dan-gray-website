@@ -54,10 +54,11 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            border-radius: 50%;
             width: 150px;
             height: 150px;
-            object-fit: cover;
+            object-fit: cover; /* Ensures image is cropped */
+            object-position: 50% 20%; /* This crops the top third of the image */
+            border-radius: 50%;
             border: 3px solid #FFFFFF; /* White border around the image */
         }
 
@@ -116,8 +117,10 @@
             <a href="https://github.com/exitvillain" target="_blank">Github</a>
             <a href="certificates.html">Degrees and Certificates</a>
         </div>
-        <img src="DanGrayProfileRoof_cropped.jpeg" alt="Daniel Gray Profile" class="profile-pic">
+        <!-- Use the original image with CSS cropping -->
+        <img src="DanGrayProfileRoof.jpeg" alt="Daniel Gray Profile" class="profile-pic">
     </div>
+
 
     <div class="projects-container">
         <div class="project">
@@ -133,7 +136,7 @@
         <div class="project">
             <h2>IBM Watson-like Question Answerer</h2>
             <p>Developed an AI that answers questions by analyzing a set of documents to find relevant answers. This project demonstrates the practical application of NLP (Natural Language Processing) principles to create a sophisticated question-answering system.</p>
-            <a href="https://github.com/calcmaster7/morpheus" target="_blank" class="github-link">View on GitHub</a>
+            <a href="https://github.com/exitvillain/morpheus" target="_blank" class="github-link">View on GitHub</a>
         </div>
     </div>
 
