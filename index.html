@@ -91,6 +91,11 @@
             color: #FFFFFF;
         }
 
+        .highlighted-text {
+            font-weight: bold;
+            font-size: 1.2em; /* Increases size relative to the parent element */
+        }
+
         .project h2 {
             color: #FFFFFF;
             text-decoration: underline;
@@ -120,6 +125,7 @@
             color: #FFFFFF;
             margin-bottom: 20px;
         }
+        
 
         /* Responsive adjustments for mobile */
         @media (max-width: 768px) {
@@ -148,7 +154,10 @@
     <div class="projects-container">
         <img src="https://tryhackme-badges.s3.amazonaws.com/exitvillain.png" alt="Your Image Badge" />
         <div class = "project2">
-        I am a software engineer specializing in offensive security including network, web, and cloud security testing, red teaming, and exploit development. I am a proud member of the <span class = "neon"> Offensive Security, Incident Response, and Internet Security (OSIRIS) </span> Lab: a cybersecurity research lab  at New York University. 
+      <div class = "highlighted-text"> About Me </div>
+I am a software engineer specializing in offensive security, including network, web, and cloud security testing, red teaming, and exploit development. I hold an M.S. in Computer Science from New York University, where I was a proud member of the <span class = "neon"> Offensive Security, Incident Response, and Internet Security (OSIRIS) Lab  </span> , a student-run cybersecurity research lab. I also earned a B.A. in Physics from Columbia University, which shaped my analytical and problem-solving skills.
+
+In addition to my professional work, I share tutorials and cybersecurity content on my YouTube channel, @exitvillain, where I cover topics like reverse engineering and web application security.
         <div class="project">
             <h2><a href="https://exitvillain.com" target="_blank">exitvillain.com</a></h2>
             <p>My personal cybersecurity blog that I turned into a forum for hackers. Users can post in categories, like/unlike posts, follow, customize profiles, reset passwords, send pm’s. Built with Django, JavaScript, Docker, and PostgreSQL on Amazon Cloud. Features CSRF protection, security middleware, and includes an intro video on reverse engineering.</p>
